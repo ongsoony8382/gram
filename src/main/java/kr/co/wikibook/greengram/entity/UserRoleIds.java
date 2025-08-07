@@ -3,14 +3,13 @@ package kr.co.wikibook.greengram.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import kr.co.wikibook.greengram.config.enumcode.EnumUserRole;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 
 @Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Embeddable
 @EqualsAndHashCode
 public class UserRoleIds implements Serializable {
